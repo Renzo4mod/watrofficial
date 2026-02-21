@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATR - We Are The Resistance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d0000 100%);
+            color: #ffffff;
+        }
+        .money-heist-theme {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d0000 100%);
+        }
+        .money-heist-red {
+            color: #ff0000;
+        }
+        .dali-mask {
+            filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
+        }
+        .category-card {
+            transition: all 0.3s ease;
+            background: rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+        }
+        .link-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            padding: 4px 0;
+        }
+        .link-item i {
+            margin-right: 8px;
+            color: #ff0000;
+        }
+        .streaming-service, .ai-model, .appearance-item, .general-resource, .audio-resource, .game-resource, .torrent-resource, .reading-resource, .educational-resource, .mobile-resource, .misc-resource, .nonenglish-resource, .linux-resource {
+            border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+            padding: 12px 0;
+        }
+        .streaming-service:last-child, .ai-model:last-child, .appearance-item:last-child, .general-resource:last-child, .audio-resource:last-child, .game-resource:last-child, .torrent-resource:last-child, .reading-resource:last-child, .educational-resource:last-child, .mobile-resource:last-child, .misc-resource:last-child, .nonenglish-resource:last-child, .linux-resource:last-child {
+            border-bottom: none;
+        }
+        .category-content {
+            display: none;
+            margin-top: 1rem;
+        }
+        .category-button {
+            cursor: pointer;
+            user-select: none;
+        }
+        .category-button:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body class="money-heist-theme min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-6xl font-bold italic mb-4 money-heist-red">WATR</h1>
+            <p class="text-2xl mb-8 text-red-400">We Are The Resistance 🚫🗣✊✊🏿 ✊🏻 ✊🏽⛓️🛡</p>
+            
+            <!-- Dali Mask Icon -->
+            <div class="flex justify-center mb-8">
+                <img src="https://z-cdn-media.chatglm.cn/files/9b61745d-73f8-41df-964f-fc10b0242cb5.png?auth_key=1871673410-3493695ab8254970afb53b7d62f337be-0-5264e60bb22b0d60b9c16f79ea17952f" alt="Dali Mask" class="dali-mask rounded-full w-32 h-32">
+            </div>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="text-center mb-12">
+            <h2 class="text-3xl mb-6 money-heist-red">Connect With Us</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="https://t.me/watrofficial" target="_blank" class="text-4xl hover:text-red-400 transition-colors">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://www.instagram.com/watrofficialpage/" target="_blank" class="text-4xl hover:text-red-400 transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@watrofficial" target="_blank" class="text-4xl hover:text-red-400 transition-colors">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Categories Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <!-- Appearance Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('appearance-content')">
+                    <i class="fas fa-shield-alt text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Appearance</h3>
+                    <p class="text-gray-300">Learn how to block ads, trackers and other nasty things.</p>
+                </div>
+                <div id="appearance-content" class="category-content">
+                    <div class="space-y-2 text-sm">
+                        <div class="link-item">
+                            <i class="fas fa-music"></i>
+                            <a href="https://fmhy.net/audio/#spotify-tools" target="_blank" class="hover:text-red-400">Spotify Adblockers</a>
+                        </div>
+                        <div class="link-item">
+                            <i class="fas fa-gamepad"></i>
+                            <a href="https://fmhy.net/social-media-tools/#twitch-adblockers" target="_blank" class="hover:text-red-400">Twitch Adblockers</a>
+                        </div>
+                        <div class="link-item">
+                            <i class="fas fa-link"></i>
+                            <a href="https://fmhy.net/internet-tools/#redirect-bypass" target="_blank" class="hover:text-red-400">Bypass URL Redirects</a>
+                        </div>
+                        <div class="link-item">
+                            <i class="fas fa-newspaper"></i>
+                            <a href="https://fmhy.net/internet-tools/#paywall-bypass" target="_blank" class="hover:text-red-400">Bypass Article Paywalls</a>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Adblockers / Extensions:</p>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="link-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <a href="https://github.com/uBlockOrigin/uBOL-home" target="_blank" class="hover:text-red-400">uBlock Origin (mv3)</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <a href="https://github.com/AdguardTeam/AdguardBrowserExtension" target="_blank" class="hover:text-red-400">AdGuard</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <a href="https://github.com/arkenfox/user.js/wiki/4.1-Extensions/#-dont-bother" target="_blank" class="hover:text-red-400">Arkenfox User.js</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Filter Lists / Issues:</p>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="link-item">
+                                    <i class="fas fa-list"></i>
+                                    <a href="https://github.com/uBlockOrigin/uAssets/issues" target="_blank" class="hover:text-red-400">uAssets Issues</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-list"></i>
+                                    <a href="https://github.com/uBlockOrigin/uAssets/discussions/27472" target="_blank" class="hover:text-red-400">uAssets Discussions</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-bug"></i>
+                                    <a href="https://reports.adguard.com/new_issue.html" target="_blank" class="hover:text-red-400">AdGuard Issue Reports</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Skip Sponsored YouTube Ads:</p>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="link-item">
+                                    <i class="fab fa-twitter"></i>
+                                    <a href="https://x.com/SponsorBlock" target="_blank" class="hover:text-red-400">SponsorBlock Twitter</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-discord"></i>
+                                    <a href="https://discord.gg/SponsorBlock" target="_blank" class="hover:text-red-400">SponsorBlock Discord</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/ajayyy/SponsorBlock" target="_blank" class="hover:text-red-400">SponsorBlock GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">3rd Party Ports:</p>
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="link-item">
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/mchangrh/sb.js" target="_blank" class="hover:text-red-400">sb.js</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-code"></i>
+                                    <a href="https://greasyfork.org/en/scripts/453320" target="_blank" class="hover:text-red-400">Greasy Fork</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-book"></i>
+                                    <a href="https://github.com/ajayyy/SponsorBlock/wiki/3rd-Party-Ports" target="_blank" class="hover:text-red-400">SponsorBlock Wiki</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Hide Discord Nitro / Boost Ads:</p>
+                            <div class="link-item">
+                                <i class="fab fa-discord"></i>
+                                <a href="https://codeberg.org/AllPurposeMat/Disblock-Origin" target="_blank" class="hover:text-red-400">Disblock Origin</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Popup Blockers:</p>
+                            <div class="link-item">
+                                <i class="fas fa-window-close"></i>
+                                <a href="https://github.com/schomery/popup-blocker" target="_blank" class="hover:text-red-400">Popup Blocker (strict)</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Hide Website Overlays:</p>
+                            <div class="link-item">
+                                <i class="fas fa-eye-slash"></i>
+                                <a href="https://github.com/NicolaeNMV/BehindTheOverlay" target="_blank" class="hover:text-red-400">BehindTheOverlay</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Skip Sponsored Spotify Podcast Ads:</p>
+                            <div class="link-item">
+                                <i class="fab fa-spotify"></i>
+                                <a href="https://spotsponsorblock.org/" target="_blank" class="hover:text-red-400">Spot SponsorBlock</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <p class="font-bold mb-2">Skip Sponsored Bilibili Ads:</p>
+                            <div class="link-item">
+                                <i class="fas fa-video"></i>
+                                <a href="https://github.com/hanydd/BilibiliSponsorBlock" target="_blank" class="hover:text-red-400">BilibiliSponsorBlock</a>
+                            </div>
+                        </div>
+                        
+                        <!-- New Adblockers and VPN resources -->
+                        <div class="mt-4 pt-4 border-t border-red-800">
+                            <div class="general-resource">
+                                <div class="flex items-center mb-1">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <a href="https://yarrlist.net/adblockers-list" target="_blank" class="hover:text-red-400 font-bold">👁️‍🗨️Adblockers</a>
+                                </div>
+                                <div class="ml-6 text-gray-400">Block ads and pop-ups for a smoother browsing experience</div>
+                            </div>
+                            
+                            <div class="general-resource">
+                                <div class="flex items-center mb-1">
+                                    <i class="fas fa-lock"></i>
+                                    <a href="https://yarrlist.net/list-with-best-vpn-service-2025" target="_blank" class="hover:text-red-400 font-bold">🔏VPN</a>
+                                </div>
+                                <div class="ml-6 text-gray-400">Protect your privacy and access restricted content online</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AI Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('ai-content')">
+                    <i class="fas fa-robot text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">AI</h3>
+                    <p class="text-gray-300">Explore the world of AI and machine learning.</p>
+                </div>
+                <div id="ai-content" class="category-content">
+                    <div class="space-y-1 text-sm">
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">1</span>
+                                <span class="font-bold">GPT-5.2 Instant</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">ChatGPT</span>
+                                    <a href="https://chatgpt.com/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-reddit"></i>
+                                    <a href="https://www.reddit.com/r/OpenAI/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">2</span>
+                                <span class="font-bold">Qwen3.5-Plus</span>
+                                <span class="text-gray-400 ml-2">Unlimited</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Qwen</span>
+                                    <a href="https://chat.qwen.ai/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-reddit"></i>
+                                    <a href="https://www.reddit.com/r/Qwen_AI/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">3</span>
+                                <span class="font-bold">Claude 4.5 Sonnet</span>
+                                <span class="text-gray-400 ml-2">Requires Google Login</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Claude</span>
+                                    <a href="https://claude.ai/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/ComposioHQ/awesome-claude-skills" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">4</span>
+                                <span class="font-bold">ERNIE 5.0 Preview 1220</span>
+                                <span class="text-gray-400 ml-2">x1 Demo</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Ernie</span>
+                                    <a href="https://ernie.baidu.com/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-cube"></i>
+                                    <a href="https://huggingface.co/spaces/baidu/ernie_4.5_turbo_demo" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">5</span>
+                                <span class="font-bold">Mistral Large 3</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Mistral</span>
+                                    <a href="https://chat.mistral.ai" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-reddit"></i>
+                                    <a href="https://www.reddit.com/r/MistralAI/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">6</span>
+                                <span class="font-bold">MiniMax-M2.5</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">MiniMax AI</span>
+                                    <a href="https://agent.minimax.io/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-discord"></i>
+                                    <a href="https://discord.com/invite/hailuoai" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">7</span>
+                                <span class="font-bold">Olmo3.1 32B</span>
+                                <span class="text-gray-400 ml-2">No Sign-Up</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Ai2 Playground</span>
+                                    <a href="https://playground.allenai.org/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-discord"></i>
+                                    <a href="https://discord.gg/NE5xPufNwu" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">8</span>
+                                <span class="font-bold">LongCat-Flash-Chat</span>
+                                <span class="text-gray-400 ml-2">Requires Sign-Up</span>
+                                <span class="text-gray-400 ml-2">Unlimited</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">LongCat</span>
+                                    <a href="https://longcat.chat/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-twitter"></i>
+                                    <a href="https://x.com/Meituan_LongCat" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">9</span>
+                                <span class="font-bold">Command-A-Reasoning</span>
+                                <span class="text-gray-400 ml-2">1000 Monthly</span>
+                                <span class="text-gray-400 ml-2">Requires Sign-Up</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Cohere</span>
+                                    <a href="https://dashboard.cohere.com/playground/chat" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-discord"></i>
+                                    <a href="https://discord.com/invite/co-mmunity" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">10</span>
+                                <span class="font-bold">Solar Pro 2 Model</span>
+                                <span class="text-gray-400 ml-2">No Sign-Up</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Solar</span>
+                                    <a href="https://console.upstage.ai/playground/chat" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-discord"></i>
+                                    <a href="https://discord.com/invite/Cge9FYjV4h" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">11</span>
+                                <span class="font-bold">Step 3.5 Flash</span>
+                                <span class="text-gray-400 ml-2">DeepSeek R1</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">StepFun</span>
+                                    <a href="https://stepfun.ai/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">12</span>
+                                <span class="font-bold">Apertus 70B</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Apertus</span>
+                                    <a href="https://publicai.co/chat" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <a href="https://chat.publicai.co/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">13</span>
+                                <span class="font-bold">Reka Flash 3.1</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Reka</span>
+                                    <a href="https://www.reka.ai/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                                <div class="link-item">
+                                    <i class="fab fa-discord"></i>
+                                    <a href="https://discord.gg/jtjNSD52mf" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">14</span>
+                                <span class="font-bold">LLM360</span>
+                                <span class="text-gray-400 ml-2">MBZUAI (not Kimi)</span>
+                                <span class="text-gray-400 ml-2">Requires Sign-Up</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">K2Think</span>
+                                    <a href="https://www.k2think.ai/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">15</span>
+                                <span class="font-bold">MiMo-V2-Flash</span>
+                                <span class="text-gray-400 ml-2">Requires Sign-Up</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">MiMo Studio</span>
+                                    <a href="https://aistudio.xiaomimimo.com/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-model">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 font-bold mr-2">16</span>
+                                <span class="font-bold">Dolphin 24B</span>
+                                <span class="text-gray-400 ml-2">No Sign-Up</span>
+                            </div>
+                            <div class="ml-6 space-y-1">
+                                <div class="link-item">
+                                    <i class="fas fa-robot"></i>
+                                    <span class="mr-2">Dolphin Chat</span>
+                                    <a href="https://chat.dphn.ai/" target="_blank" class="hover:text-red-400">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('video-content')">
+                    <i class="fas fa-film text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Video</h3>
+                    <p class="text-gray-300">Stream, download, torrent and binge all your favourite movies and shows!</p>
+                </div>
+                <div id="video-content" class="category-content">
+                    <!-- Video streaming sites -->
+                    <div class="space-y-1 text-sm">
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://soap2night.cc" target="_blank" class="hover:text-red-400 font-bold">soap2night.cc</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://dorawatch.one" target="_blank" class="hover:text-red-400 font-bold">dorawatch.one</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://wmovies.one" target="_blank" class="hover:text-red-400 font-bold">wmovies.one</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://hydrahd.ru" target="_blank" class="hover:text-red-400 font-bold">hydrahd.ru</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://cineby.gd" target="_blank" class="hover:text-red-400 font-bold">cineby.gd</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://flickystream.ru" target="_blank" class="hover:text-red-400 font-bold">flickystream.ru</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://yflix.to" target="_blank" class="hover:text-red-400 font-bold">yflix.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://cinema.bz" target="_blank" class="hover:text-red-400 font-bold">cinema.bz</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://tmovie.tv" target="_blank" class="hover:text-red-400 font-bold">tmovie.tv</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://goojara.to" target="_blank" class="hover:text-red-400 font-bold">goojara.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://veloratv.ru" target="_blank" class="hover:text-red-400 font-bold">veloratv.ru</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://mapple.mov" target="_blank" class="hover:text-red-400 font-bold">mapple.mov</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://popcornmovies.org" target="_blank" class="hover:text-red-400 font-bold">popcornmovies.org</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://gomovies.gg" target="_blank" class="hover:text-red-400 font-bold">gomovies.gg</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://onionplay.cx" target="_blank" class="hover:text-red-400 font-bold">onionplay.cx</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://lookmovie2.to" target="_blank" class="hover:text-red-400 font-bold">lookmovie2.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://pressplay.top" target="_blank" class="hover:text-red-400 font-bold">pressplay.top</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://moviesjoytv.to" target="_blank" class="hover:text-red-400 font-bold">moviesjoytv.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://fmovies.co" target="_blank" class="hover:text-red-400 font-bold">fmovies.co</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://soap2dayhdz.com" target="_blank" class="hover:text-red-400 font-bold">soap2dayhdz.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://projectfreetv.sx" target="_blank" class="hover:text-red-400 font-bold">projectfreetv.sx</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://sflix.ps" target="_blank" class="hover:text-red-400 font-bold">sflix.ps</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://theflixertv.to" target="_blank" class="hover:text-red-400 font-bold">theflixertv.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://myflixerz.to" target="_blank" class="hover:text-red-400 font-bold">myflixerz.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://hdtodayz.to" target="_blank" class="hover:text-red-400 font-bold">hdtodayz.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://flixhq.to" target="_blank" class="hover:text-red-400 font-bold">flixhq.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://hurawatch.cc" target="_blank" class="hover:text-red-400 font-bold">hurawatch.cc</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://nunflix.li" target="_blank" class="hover:text-red-400 font-bold">nunflix.li</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://ridomovies.tv" target="_blank" class="hover:text-red-400 font-bold">ridomovies.tv</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://123moviesfree.net" target="_blank" class="hover:text-red-400 font-bold">123moviesfree.net</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://hdtoday.cc" target="_blank" class="hover:text-red-400 font-bold">hdtoday.cc</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://vidplay.top" target="_blank" class="hover:text-red-400 font-bold">vidplay.top</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://putlocker.pe" target="_blank" class="hover:text-red-400 font-bold">putlocker.pe</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://yesmovies.ag" target="_blank" class="hover:text-red-400 font-bold">yesmovies.ag</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://watchseries.pe" target="_blank" class="hover:text-red-400 font-bold">watchseries.pe</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://primewire.mov" target="_blank" class="hover:text-red-400 font-bold">primewire.mov</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://watch32.sx" target="_blank" class="hover:text-red-400 font-bold">watch32.sx</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://flickeraddon.pages.dev" target="_blank" class="hover:text-red-400 font-bold">flickeraddon.pages.dev</a>
+                            </div>
+                        </div>
+                        
+                        <div class="streaming-service">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-film"></i>
+                                <a href="https://streamm4u.com.co" target="_blank" class="hover:text-red-400 font-bold">streamm4u.com.co</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Audio Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('audio-content')">
+                    <i class="fas fa-music text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Audio</h3>
+                    <p class="text-gray-300">Stream, download and torrent songs, podcasts and more!</p>
+                </div>
+                <div id="audio-content" class="category-content">
+                    <!-- Audio resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-spotify"></i>
+                                <a href="https://spotdownloader.com" target="_blank" class="hover:text-red-400 font-bold">Spotify</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-spotify"></i>
+                                <a href="https://spotifymate.com" target="_blank" class="hover:text-red-400 font-bold">spotifymate.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-spotify"></i>
+                                <a href="https://spotmate.online" target="_blank" class="hover:text-red-400 font-bold">spotmate.online</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-youtube"></i>
+                                <a href="https://y2mate.nu" target="_blank" class="hover:text-red-400 font-bold">y2mate.nu</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-youtube"></i>
+                                <a href="https://azmp3.cc" target="_blank" class="hover:text-red-400 font-bold">azmp3.cc</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-youtube"></i>
+                                <a href="https://ytmp3.cc" target="_blank" class="hover:text-red-400 font-bold">ytmp3.cc</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://racoon" target="_blank" class="hover:text-red-400 font-bold">Multiple</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://ytiz.xyz" target="_blank" class="hover:text-red-400 font-bold">racoon</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://lucida.to" target="_blank" class="hover:text-red-400 font-bold">ytiz.xyz</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://cobalt.tools" target="_blank" class="hover:text-red-400 font-bold">lucida.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://slsknet.org" target="_blank" class="hover:text-red-400 font-bold">cobalt.tools</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://spotube.dev" target="_blank" class="hover:text-red-400 font-bold">slsknet.org</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://github.io/downline" target="_blank" class="hover:text-red-400 font-bold">spotube.dev</a>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-music"></i>
+                                <a href="https://github.io/downline" target="_blank" class="hover:text-red-400 font-bold">github.io/downline</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Games Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('games-content')">
+                    <i class="fas fa-gamepad text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Games</h3>
+                    <p class="text-gray-300">Download and play all your favourite games or emulate some old but gold ones!</p>
+                </div>
+                <div id="games-content" class="category-content">
+                    <!-- Games resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://fitgirl-repacks.site" target="_blank" class="hover:text-red-400 font-bold">fitgirl-repacks.site</a>
+                            </div>
+                        </div>
+                        
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://dodi-repacks.site" target="_blank" class="hover:text-red-400 font-bold">dodi-repacks.site</a>
+                            </div>
+                        </div>
+                        
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://ankergames.net" target="_blank" class="hover:text-red-400 font-bold">ankergames.net</a>
+                            </div>
+                        </div>
+                        
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://g4u.to" target="_blank" class="hover:text-red-400 font-bold">g4u.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://steamrip.com" target="_blank" class="hover:text-red-400 font-bold">steamrip.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://steamgg.net" target="_blank" class="hover:text-red-400 font-bold">steamgg.net</a>
+                            </div>
+                        </div>
+                        
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://m4ckd0ge-repacks.site" target="_blank" class="hover:text-red-400 font-bold">m4ckd0ge-repacks.site</a>
+                            </div>
+                        </div>
+                        
+                        <div class="game-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-gamepad"></i>
+                                <a href="https://gload.to" target="_blank" class="hover:text-red-400 font-bold">gload.to</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Torrenting Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('torrenting-content')">
+                    <i class="fas fa-torrent text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Torrenting</h3>
+                    <p class="text-gray-300">Download your favourite media using the BitTorrent protocol.</p>
+                </div>
+                <div id="torrenting-content" class="category-content">
+                    <!-- Torrenting resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://1337x.to" target="_blank" class="hover:text-red-400 font-bold">1337x.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://rutracker.org" target="_blank" class="hover:text-red-400 font-bold">rutracker.org</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://limetorrents.fun" target="_blank" class="hover:text-red-400 font-bold">limetorrents.fun</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://yts.bz" target="_blank" class="hover:text-red-400 font-bold">yts.bz (Movies)</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://eztvx.to" target="_blank" class="hover:text-red-400 font-bold">eztvx.to (TV Shows)</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://torrentgalaxy.one" target="_blank" class="hover:text-red-400 font-bold">torrentgalaxy.one</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://extratorrent.st" target="_blank" class="hover:text-red-400 font-bold">extratorrent.st</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://ext.to" target="_blank" class="hover:text-red-400 font-bold">ext.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="torrent-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-download"></i>
+                                <a href="https://rargb.to" target="_blank" class="hover:text-red-400 font-bold">rargb.to</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reading Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('reading-content')">
+                    <i class="fas fa-book text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Reading</h3>
+                    <p class="text-gray-300">Whether you're a bookworm, otaku or comic book fan, you'll be able to find your favourite pieces of literature here!</p>
+                </div>
+                <div id="reading-content" class="category-content">
+                    <!-- Reading resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="reading-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book-open"></i>
+                                <a href="https://readcomiconline.li" target="_blank" class="hover:text-red-400 font-bold">readcomiconline.li</a>
+                            </div>
+                        </div>
+                        
+                        <div class="reading-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book-open"></i>
+                                <a href="https://xoxocomic.com" target="_blank" class="hover:text-red-400 font-bold">xoxocomic.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="reading-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book-open"></i>
+                                <a href="https://readcomicsonline.ru" target="_blank" class="hover:text-red-400 font-bold">readcomicsonline.ru</a>
+                            </div>
+                        </div>
+                        
+                        <div class="reading-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book-open"></i>
+                                <a href="https://batcave.biz" target="_blank" class="hover:text-red-400 font-bold">batcave.biz</a>
+                            </div>
+                        </div>
+                        
+                        <div class="reading-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book-open"></i>
+                                <a href="https://getcomics.org" target="_blank" class="hover:text-red-400 font-bold">getcomics.org</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Educational Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('educational-content')">
+                    <i class="fas fa-graduation-cap text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Educational</h3>
+                    <p class="text-gray-300">Educational content for all ages.</p>
+                </div>
+                <div id="educational-content" class="category-content">
+                    <!-- Educational resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book"></i>
+                                <a href="https://z-lib.gd" target="_blank" class="hover:text-red-400 font-bold">z-lib.gd</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book"></i>
+                                <a href="https://annas-archive.li" target="_blank" class="hover:text-red-400 font-bold">annas-archive.li</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book"></i>
+                                <a href="https://libgen.li" target="_blank" class="hover:text-red-400 font-bold">libgen.li</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book"></i>
+                                <a href="https://ebook-hunter.org" target="_blank" class="hover:text-red-400 font-bold">ebook-hunter.org</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-headphones"></i>
+                                <a href="https://galaxyaudiobook.com" target="_blank" class="hover:text-red-400 font-bold">Audiobooks</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-headphones"></i>
+                                <a href="https://galaxyaudiobook.com" target="_blank" class="hover:text-red-400 font-bold">galaxyaudiobook.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-headphones"></i>
+                                <a href="https://audiobookbay.lu" target="_blank" class="hover:text-red-400 font-bold">audiobookbay.lu</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-headphones"></i>
+                                <a href="https://nepu.to" target="_blank" class="hover:text-red-400 font-bold">nepu.to</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book"></i>
+                                <a href="https://foxit.com" target="_blank" class="hover:text-red-400 font-bold">eBook Readers</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book"></i>
+                                <a href="https://foxit.com" target="_blank" class="hover:text-red-400 font-bold">foxit.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="educational-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-book"></i>
+                                <a href="https://flowoss.com" target="_blank" class="hover:text-red-400 font-bold">flowoss.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('mobile-content')">
+                    <i class="fas fa-mobile-alt text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Mobile</h3>
+                    <p class="text-gray-300">All forms of content for Android and iOS.</p>
+                </div>
+                <div id="mobile-content" class="category-content">
+                    <!-- Mobile resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="mobile-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-telegram"></i>
+                                <a href="https://t.me/watrofficial" target="_blank" class="hover:text-red-400 font-bold">my telegram channel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Linux & Mac Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('linux-content')">
+                    <i class="fab fa-apple text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Linux & Mac</h3>
+                    <p class="text-gray-300">The $HOME of Linux and macOS.</p>
+                </div>
+                <div id="linux-content" class="category-content">
+                    <!-- Linux & Mac resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="linux-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/watrofficialpage/" target="_blank" class="hover:text-red-400 font-bold">my instagram channel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Non-English Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('nonenglish-content')">
+                    <i class="fas fa-globe text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Non-English</h3>
+                    <p class="text-gray-300">Content in languages other than English.</p>
+                </div>
+                <div id="nonenglish-content" class="category-content">
+                    <!-- Non-English resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="nonenglish-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fab fa-youtube"></i>
+                                <a href="https://www.youtube.com/@watrofficial" target="_blank" class="hover:text-red-400 font-bold">my youtube channel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Misc Category -->
+            <div class="category-card rounded-lg p-6">
+                <div class="category-button" onclick="toggleContent('misc-content')">
+                    <i class="fas fa-ellipsis-h text-4xl mb-4 text-red-400"></i>
+                    <h3 class="text-xl font-bold mb-2 money-heist-red">Misc</h3>
+                    <p class="text-gray-300">Various topics like food, travel, news, shopping, fun sites and more</p>
+                </div>
+                <div id="misc-content" class="category-content">
+                    <!-- Misc resources -->
+                    <div class="space-y-1 text-sm">
+                        <div class="misc-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-utensils"></i>
+                                <a href="https://www.myfridgefood.com/" target="_blank" class="hover:text-red-400 font-bold">https://www.myfridgefood.com/</a>
+                            </div>
+                        </div>
+                        
+                        <div class="misc-resource">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-utensils"></i>
+                                <a href="https://www.supercook.com/#/desktop" target="_blank" class="hover:text-red-400 font-bold">https://www.supercook.com/#/desktop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-400 mt-16">
+            <p>&copy; 2026 WATR - We Are The Resistance. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
