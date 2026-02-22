@@ -1350,8 +1350,38 @@
         }
     </script>
 </body>
+<!-- Buy Me a Coffee Button - Right Side -->
+<div style="position: fixed; bottom: 30px; right: 30px; z-index: 9999; animation: gentle-pulse 2s infinite;">
+    <a href="https://buymeacoffee.com/wart" target="_blank" rel="noopener noreferrer" 
+       style="display: flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #FFDD00 0%, #FDB000 100%); 
+              color: #2D2D2D; text-decoration: none; padding: 14px 28px; border-radius: 50px; 
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+              font-weight: 600; font-size: 18px; box-shadow: 0 8px 20px rgba(253, 176, 0, 0.3);
+              border: 1px solid rgba(255, 255, 255, 0.3); backdrop-filter: blur(5px);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <span style="font-size: 24px;">☕</span>
+        <span>Support Renzo</span>
+        <span style="background: rgba(0,0,0,0.1); padding: 4px 8px; border-radius: 20px; font-size: 14px;">☕</span>
+    </a>
+</div>
 
+<!-- Add this style block in your <head> section or keep it here -->
+<style>
+@keyframes gentle-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+/* Hover effect for the button */
+div > a:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(253, 176, 0, 0.4);
+    background: linear-gradient(135deg, #FFE55C 0%, #FEBF10 100%);
+}
+</style>
 </html>
+
 
 
 
